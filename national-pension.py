@@ -73,7 +73,8 @@ class PensionData():
 
 @ st.cache_data
 def read_pensiondata():
-    data = PensionData('https://drive.google.com/uc?id=1MOVRc1HXXAUkcnRHCQsurRqAUd8A9mVG')
+    url = 'https://drive.google.com/uc?id=1MOVRc1HXXAUkcnRHCQsurRqAUd8A9mVG&export=download&confirm=t'
+    data = PensionData(url)
     return data
 
 data = read_pensiondata()
